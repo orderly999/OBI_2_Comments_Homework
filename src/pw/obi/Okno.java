@@ -17,7 +17,7 @@ public class Okno { // deklaracja klasy typu Okno
 	}
 	public Okno(int d, int w, Skrzydlo[] sk){  // konstruktor klasy Okno z trzema parametrami, dwa typy calkowite i jeden tablicowy
 		dlugosc = d; // przypisanie parametru d do zmiennej dlugosc
-		wysokosc = w; / przypisanie parametru w do zmiennej wysokosc
+		wysokosc = w; // przypisanie parametru w do zmiennej wysokosc
 		liczbaSkrzydel = sk.length; // przypisanie dlugosci tablicy Skrzydlo do zmiennej liczbaSkrzydel
 		skrzydla = sk; // przypisanie paramateru tablicy typu Skrzydlo do tablicy zmiennych typu Skrzydlo
 	}		
