@@ -12,26 +12,26 @@ public class Skrzydlo { / deklaracja klasy typu Skrzydlo
 	}
 	public Skrzydlo(int dlugosc, int wysokosc, Klamka klamka) { // konstruktor klasy Skrzydlo z trzema parametrami, dwa typy calkowite, jeden typu Klamka
 		this(dlugosc,wysokosc); // wywolanie innego konstruktora
-		this.klamka = klamka; // przypisanie parametru do zmiennej
+		this.klamka = klamka; // przypisanie wartosci parametru do zmiennej
 	}
 
 	public int getDlugosc() { // funkcja zwraca dlugosc skrzydla
 		return dlugosc; // zwrocenie wartosci zmiennej
 	}
 	public void setDlugosc(int dlugosc) { // funkcja ustawia dlugosc skrzydla
-		this.dlugosc = dlugosc; // przypisanie parametru do zmiennej
+		this.dlugosc = dlugosc; // przypisanie wartosci parametru do zmiennej
 	}
 	public int getWysokosc() { // funkcja zwraca wysokosc skrzydla
 		return wysokosc; // zwrocenie wartosci zmiennej
 	}
 	public void setWysokosc(int wysokosc) { // funkcja ustawia wysokosc skrzydla, prametr typu calkowitego
-		this.wysokosc = wysokosc; // przypisanie parametru do zmiennej
+		this.wysokosc = wysokosc; // przypisanie wartosci parametru do zmiennej
 	}
 	public Klamka getKlamka() { // funkcja zwraca obiekt klasy Klamka
 		return klamka; //zwrocenie wartosci zmiennej
 	}
 	public void setKlamka(Klamka klamka) { // funkcja ustawia obiekt klasy Klamka
-		this.klamka = klamka; // przypisanie parametru do obiektu
+		this.klamka = klamka; // przypisanie wartosci parametru do obiektu
 	}
 	public boolean isOtwarte() { // funkcja zwraca stan logiczny skrzydla drzwi, otwarte lub zamkniete
 		return otwarte; //zwrocenie wartosci zmiennej
