@@ -37,7 +37,7 @@ public class Skrzydlo { / deklaracja klasy typu Skrzydlo
 		return otwarte; //zwrocenie wartosci zmiennej
 	}
 	public void setOtwarte(boolean otwarte) { // funkcja ustawia stan logiczny skrzydla drzwi, parametr typu logicznego
-		this.otwarte = otwarte;
+		this.otwarte = otwarte; // przypisanie wartosci parametru do zmiennej
 	}
 	public String stan() { // funkcja zwraca stan skrzydla drzwi w postaci zmiennej typu String sklejonej z kilku innych zmiennych typu String
 		String wymiary = dlugosc+"x"+wysokosc; // dodanie do stringa danych o dlugosci i wysokosci skrzydla

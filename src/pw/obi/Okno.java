@@ -67,7 +67,7 @@ public class Okno { // deklaracja klasy typu Okno
 		
 	}
 	public void zamknij(){ // funkcja zamyka wszystkie skrzydla
-		for(int i=0;i<liczbaSkrzydel;i++){ // petla for
+		for(int i=0;i<liczbaSkrzydel;i++){ // petla for do ustawieniua stanu skrzydel danego okna na zamkniety 
 			skrzydla[i].setOtwarte(false); // ustaw w petli stan skrzydel na zamkniety dla wszystkich skrzydel
 		}
 	}

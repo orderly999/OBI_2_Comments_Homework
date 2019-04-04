@@ -4,7 +4,7 @@ public class Klamka { // deklaracja klasy typu klamka
 	private boolean czyKluczyk = false; // deklaracja zmiennej logicznej ktora przechowuje informacje czy klamka posiada kluczyk
 
 	public boolean isCzyKluczyk() { // funkcja zwraca informacje czy klamka jest z kluczykiem
-		return czyKluczyk; // zwrocenie wartosc boolean
+		return czyKluczyk; // zwrocenie wartosci boolean
 	}
 	public void setCzyKluczyk(boolean czyKluczyk) { // funkcja okresla czy klamka jest z kluczykiem, parametr typu logicznego
 		this.czyKluczyk = czyKluczyk; // przypisanie parametru do zmiennej
