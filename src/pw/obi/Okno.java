@@ -19,7 +19,7 @@ public class Okno { // deklaracja klasy typu Okno
 		dlugosc = d; // przypisanie parametru d do zmiennej dlugosc
 		wysokosc = w; / przypisanie parametru w do zmiennej wysokosc
 		liczbaSkrzydel = sk.length; // przypisanie dlugosci tablicy Skrzydlo do zmiennej liczbaSkrzydel
-		skrzydla = sk;
+		skrzydla = sk; // przypisanie paramateru tablicy typu Skrzydlo do tablicy zmiennych typu Skrzydlo
 	}		
 	public Okno(int d, int w){  // konstruktor klasy Okno z dwoma parametrami, dwa typy calkowite
 		this(d,w,1); // wywolanie innego konstruktora klasy Okno z trzema parametrami
@@ -33,7 +33,7 @@ public class Okno { // deklaracja klasy typu Okno
 	}
 	public void setDlugosc(int dlugosc) { // funkcja ustawia dlugosc okna
 		this.dlugosc = dlugosc; // przypisanie wartosci parametru do zmiennej
-		for(int i=0;i<liczbaSkrzydel;i++){ // petla for
+		for(int i=0;i<liczbaSkrzydel;i++){ // petla for dla ustawienia dlugosci wszystkich skrzydel w oknie
 			skrzydla[i].setDlugosc(dlugosc/liczbaSkrzydel); // ustawienie w petli dlugosci wszystkich skrzydel w oknie
 		}
 	}
@@ -43,7 +43,7 @@ public class Okno { // deklaracja klasy typu Okno
 	}
 	public void setWysokosc(int wysokosc) { // funkcja ustawia wysokosc okna
 		this.wysokosc = wysokosc; // przypisanie parametru wysokosc do zmiennej wysokosc
-		for(int i=0;i<liczbaSkrzydel;i++){ // petla for
+		for(int i=0;i<liczbaSkrzydel;i++){ // petla for dla ustawienia wysokosci wszystkich skrzydel dla danego okna
 			skrzydla[i].setWysokosc(wysokosc); // ustawienie w petli wysokosci wszystkich skrzydel dla danego okna
 		}
 	}
@@ -56,7 +56,7 @@ public class Okno { // deklaracja klasy typu Okno
 	}
 
 	public void otworz(){ //  funkcja otwiera wszystkie skrzydla
-		for(int i=0;i<liczbaSkrzydel;i++){ // petla for
+		for(int i=0;i<liczbaSkrzydel;i++){ // petla for dla ustawienia w petli wszystkich skrzydel danego okna na true (otwarte)
 			skrzydla[i].setOtwarte(true); // ustawienie w petli wszystkich skrzydel danego okna na true (otwarte)
 		}
 	}
@@ -72,14 +72,13 @@ public class Okno { // deklaracja klasy typu Okno
 		}
 	}
 	public void zamknij(int nrSkrzydla){ // funkcja zamyka konkretne skrzydlo
-		if(nrSkrzydla > skrzydla.length) return; // jesli przekazany argument przekracza ilosc skrzydel zamknij aplikacje
-		
+		if(nrSkrzydla > skrzydla.length) return; // jesli przekazany argument przekracza ilosc skrzydel zamknij aplikacje	
 		skrzydla[nrSkrzydla].setOtwarte(false); // ustaw stan otwarcia skrzydla na false dla okreslonego numeru skrzydla
 		
 	}
 	public void wypiszStan() { // wypisuje stan poszczegolnych skrzydel okna, otwarte czy zamkniete
 		String tekst = ""; // deklaracja zmiennej typu String
-		for(int i=0;i<liczbaSkrzydel;i++){ // petla for
+		for(int i=0;i<liczbaSkrzydel;i++){ // petla for dla sklejenia stringu przechowujacego informacje o stanie skrzyde
 			tekst += "["+skrzydla[i].stan()+"]"; // sklejenie stringu przechowujacego informacje o stanie skrzydel w petli 
 		}
 		System.out.println(tekst); // wypisanie tekstu okreslajacego stan skrzydla w konsoli
