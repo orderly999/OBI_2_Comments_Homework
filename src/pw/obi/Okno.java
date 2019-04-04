@@ -18,7 +18,7 @@ public class Okno { // deklaracja klasy typu Okno
 	public Okno(int d, int w, Skrzydlo[] sk){  // konstruktor klasy Okno z trzema parametrami, dwa typy calkowite i jeden tablicowy
 		dlugosc = d; // przypisanie parametru d do zmiennej dlugosc
 		wysokosc = w; / przypisanie parametru w do zmiennej wysokosc
-		liczbaSkrzydel = sk.length; // przypisanie parametru lSkrzydel do zmiennej liczbaSkrzydel
+		liczbaSkrzydel = sk.length; // przypisanie dlugosci tablicy Skrzydlo do zmiennej liczbaSkrzydel
 		skrzydla = sk;
 	}		
 	public Okno(int d, int w){  // konstruktor klasy Okno z dwoma parametrami, dwa typy calkowite
@@ -42,7 +42,7 @@ public class Okno { // deklaracja klasy typu Okno
 		return wysokosc;
 	}
 	public void setWysokosc(int wysokosc) { // funkcja ustawia wysokosc okna
-		this.wysokosc = wysokosc;
+		this.wysokosc = wysokosc; // przypisanie parametru wysokosc do zmiennej wysokosc
 		for(int i=0;i<liczbaSkrzydel;i++){
 			skrzydla[i].setWysokosc(wysokosc); // ustawienie w petli wysokosci wszystkich skrzydel dla danego okna
 		}
@@ -60,7 +60,7 @@ public class Okno { // deklaracja klasy typu Okno
 			skrzydla[i].setOtwarte(true); // ustawienie w petli wszystkich skrzydel danego okna na true (otwarte)
 		}
 	}
-	public void otworz(int nrSkrzydla){ // funkcja otwiera okreslone skrzydlo
+	public void otworz(int nrSkrzydla){ // funkcja otwiera okreslone skrzydlo na podstawie jego numeru 
 		if(nrSkrzydla > skrzydla.length) return; // jesli przekazany argument przekracza ilosc skrzydel zamknij program
 		
 		skrzydla[nrSkrzydla].setOtwarte(true); // ustaw stan logiczny otwarcia okreslonego skrzydla okna na true (otwarte)
