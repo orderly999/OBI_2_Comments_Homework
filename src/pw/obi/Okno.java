@@ -80,7 +80,7 @@ public class Okno { // deklaracja klasy typu Okno
 	public void wypiszStan() { // wypisuje stan poszczegolnych skrzydel okna, otwarte czy zamkniete
 		String tekst = "";
 		for(int i=0;i<liczbaSkrzydel;i++){
-			tekst += "["+skrzydla[i].stan()+"]"; // sklejenie stringu przechowujacego informacje o ilosci skrzydel w petli 
+			tekst += "["+skrzydla[i].stan()+"]"; // sklejenie stringu przechowujacego informacje o stanie skrzydel w petli 
 		}
 		System.out.println(tekst); // wypisanie tekstu okreslajacego stan skrzydla w konsoli
 		
