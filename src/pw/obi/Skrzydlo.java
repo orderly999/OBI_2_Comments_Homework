@@ -7,8 +7,8 @@ public class Skrzydlo { / deklaracja klasy typu Skrzydlo
 	private boolean otwarte = false; // deklaracja zmiennej typu logicznego (prawda lub falsz)
 
 	public Skrzydlo(int dlugosc, int wysokosc) { // konstruktor klasy Skrzydlo z dwoma parametrami, dwa typy calkowite
-		this.dlugosc = dlugosc; 
-		this.wysokosc = wysokosc;
+		this.dlugosc = dlugosc; // przypisanie parametru dlugosc do zmiennej dlugosc
+		this.wysokosc = wysokosc; // przypisanie parametru dlugosc do zmiennej dlugosc
 	}
 	public Skrzydlo(int dlugosc, int wysokosc, Klamka klamka) { // konstruktor klasy Skrzydlo z trzema parametrami, dwa typy calkowite, jeden typu Klamka
 		this(dlugosc,wysokosc); // wywolanie innego konstruktora
@@ -42,7 +42,7 @@ public class Skrzydlo { / deklaracja klasy typu Skrzydlo
 	public String stan() { // funkcja zwraca stan skrzydla drzwi w postaci zmiennej typu String sklejonej z kilku innych zmiennych typu String
 		String wymiary = dlugosc+"x"+wysokosc; // dodanie do stringa danych o dlugosci i wysokosci skrzydla
 		String otwarcie = otwarte ? "otwarte" : "zamkniete"; // wyrazenie warunkowe jesli zmienna typu boolean rowna sie false to wtedy dopisywane jest slowo "zamkniete" do stringa
-		String stanKlamki = klamka!= null ? klamka.stan() : "bez klamki"; // wyrazenie warunkowe jesli klamka rowna sie null to wtedy dopisywane do stringa jest slowo "bez klamki"
+		String stanKlamki = klamka!= null ? klamka.stan() : "bez klamki"; // wyrazenie warunkowe, operator trojargumentowy, jesli klamka rowna sie null to wtedy dopisywane do stringa jest slowo "bez klamki"
 		return wymiary  +" "+ otwarcie +" "+ stanKlamki; // sklejenie stringa ktory ma zostac zwrocony z kilku innych stringow 
 	}
 }

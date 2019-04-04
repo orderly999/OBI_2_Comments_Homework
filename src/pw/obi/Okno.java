@@ -7,18 +7,18 @@ public class Okno { // deklaracja klasy typu Okno
 	private Skrzydlo[] skrzydla; // deklaracja tablicy przechowujacej zmienne typu Skrzydlo
 	
 	public Okno(int d, int w, int lSkrzydel){ // konstruktor klasy Okno z trzema parametrami, trzy typy calkowite
-		dlugosc = d;
-		wysokosc = w;
-		liczbaSkrzydel = lSkrzydel;
+		dlugosc = d; // przypisanie parametru d do zmiennej dlugosc
+		wysokosc = w; // przypisanie parametru w do zmiennej wysokosc
+		liczbaSkrzydel = lSkrzydel; // przypisanie parametru lSkrzydel do zmiennej liczbaSkrzydel
 		skrzydla = new Skrzydlo[lSkrzydel]; // zainicjowanie tablicy skrzydla z okreslona iloscia skrzydel 
-		for(int i=0;i<lSkrzydel;i++){
+		for(int i=0;i<lSkrzydel;i++){ // petla for dla utworzenia obiektow typu Skrzydlo
 			skrzydla[i] = new Skrzydlo(d/lSkrzydel,w, new Klamka()); // utworzenie w petli obiektow typu Skrzydla dla kazdego okna
 		}
 	}
 	public Okno(int d, int w, Skrzydlo[] sk){  // konstruktor klasy Okno z trzema parametrami, dwa typy calkowite i jeden tablicowy
-		dlugosc = d;
-		wysokosc = w;
-		liczbaSkrzydel = sk.length;
+		dlugosc = d; // przypisanie parametru d do zmiennej dlugosc
+		wysokosc = w; / przypisanie parametru w do zmiennej wysokosc
+		liczbaSkrzydel = sk.length; // przypisanie parametru lSkrzydel do zmiennej liczbaSkrzydel
 		skrzydla = sk;
 	}		
 	public Okno(int d, int w){  // konstruktor klasy Okno z dwoma parametrami, dwa typy calkowite
@@ -80,7 +80,7 @@ public class Okno { // deklaracja klasy typu Okno
 	public void wypiszStan() { // wypisuje stan poszczegolnych skrzydel okna, otwarte czy zamkniete
 		String tekst = "";
 		for(int i=0;i<liczbaSkrzydel;i++){
-			tekst += "["+skrzydla[i].stan()+"]";
+			tekst += "["+skrzydla[i].stan()+"]"; // sklejenie stringu przechowujacego informacje o ilosci skrzydel w petli 
 		}
 		System.out.println(tekst); // wypisanie tekstu okreslajacego stan skrzydla w konsoli
 		

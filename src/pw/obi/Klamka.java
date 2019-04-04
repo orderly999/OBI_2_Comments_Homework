@@ -10,6 +10,6 @@ public class Klamka { // deklaracja klasy typu klamka
 		this.czyKluczyk = czyKluczyk;
 	}
 	public String stan() { // zwraca zmienna typu String ktora okresla czy klamka jest z kluczykiem czy bez
-		return czyKluczyk ? "z kluczem": "bez klucza";
+		return czyKluczyk ? "z kluczem": "bez klucza"; // instrukcja warunkowa w postai operatora trojargumentowego, jesli jest kluczyk zwraca string "z kluczem"
 	}
 }
